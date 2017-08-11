@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherApp</title>
+
+     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQxt5Ucs6xDGtO1-m8ROw-IyLkhS2tWP4&libraries=places&language=en-AU"></script>
+	  <script src="index.js"></script>
+
+
+  </head>
+  <body>
+    <!--Loading Process-->
+        <div id="loading-image">
+          <img src="inc/img/logo.png" width="50">
+          <p id="umbrellapp">umbrellapp</p>
+        </div>
+      <!-- Global Container -->
+<div id="global-div">
+      <!-- Nav Container-->
+  <div id="navigation">
+    <div class="img-center" >
+      <img  src="inc/img/logo.png" width="50">
+    </div>
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+
+
+              <span></span>
+              <span></span>
+              <span></span>
+
+            <ul id="menu">
+              <p id="nav-text">Your <br>best<br> weather<br> app</p>
+              <a href="#"><li>-</li></a>
+              <a href="#"><li>team</li></a>
+              <a href="#"><li>history</li></a>
+              <a href="#"><li>contact</li></a>
+              <div id="social">
+                <p>suggest to a friend</p>
+                <br>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.theweatherapp.com" target="_blank"><img src="inc/img/facebook.png"></a>
+                <a href="https://twitter.com/share?text=https://www.theweatherapp.com"><img id="twitter" src="inc/img/twitter.png"></a>
+                <a href="https://plus.google.com/share?url=https://www.theweatherapp.com"><img id="google" src="inc/img/google.png"></a>
+
+
+              </div>
+            </ul>
+          </div>
+        </nav>
+  </div>
+
+
+
+      <div id="main-page">
+        <form id="city-form">
+        <div id="search-container">
+          <label id="label-city" for="city-name">Type the city here...</label>
+          <br>
+          <input type="text" id="city-name" placeholder="Type your city..." autocomplete="off">
+          <button type="submit" id="submit-city"><img src="inc/img/search.png" id="img-button"></button>
+          <br><br>
+        </div>
+        <div id="geolocation-container">
+          <label id="label-location" for="city-name">or give us your location</label>
+          <br>
+          <br>
+          <button class="js-geolocation"><img id="loclogo" src="inc/img/location.png">access location</button>
+          <div id="loading-location">Calculating your location</div>
+        </div>
+        </form>
+      </div>
+      <div id="result-container">
+          <div id="first-box">
+            <div id="main-city"><span id="today">TODAY</span></div>
+            <div id="main-image"></div>
+            <div id="main-grade"></div>
+          </div>
+          <div id="forecast-box">
+              <div id="div-1"></div>
+              <div id="div-2"></div>
+              <div id="div-3"></div>
+              <div id="div-4"></div>
+              <div id="div-5"></div>
+          </div>
+      </div>
+</div>
+
+  </body>
+</html>
