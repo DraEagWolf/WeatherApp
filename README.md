@@ -6,3 +6,8 @@ App was build using client component (HTML/CSS/Javascript(Jquery)), which commun
 User can type the city, whose weather condition is interested in, or allow the app to access their current location.
 
 Custom loader, responsiveness and auto-complete are extra feature included in the project.
+
+The demo of the website is publish in:
+  https://draeagwolf.github.io/WeatherApp/
+  
+  
